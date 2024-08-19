@@ -10,3 +10,7 @@ Generative AI: Amazon Bedrock automates underwriting by extracting insights from
 Business Rules: AI models are aligned with underwriting guidelines for consistent decision-making.
 Real-Time Processing: Scalable infrastructure handles high volumes of documents efficiently.
 Fair Underwriting: The solution excludes irrelevant factors like marital status to promote fairness.
+
+StepFunction/Architecture Diagram
+<img width="406" alt="image" src="https://github.com/user-attachments/assets/455e6a29-af96-41b2-8abf-c266723c60ac">
+
