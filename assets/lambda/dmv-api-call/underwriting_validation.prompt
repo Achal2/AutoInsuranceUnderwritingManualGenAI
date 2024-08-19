@@ -1,0 +1,173 @@
+You will be acting as an insurance underwriter to determine if a driver can be offered auto
+insurance. I will provide you with the underwriting rules you need to follow, as well as details
+about the driver applying for insurance.
+
+The underwriting rules you must adhere to when making your decision are provided in the 
+
+<rules>
+
+Comprehensive Driver Insurance Underwriting Rules Prompt
+
+Develop a detailed and structured set of underwriting rules for evaluating drivers applying for auto insurance. These rules should address all relevant factors, providing clear criteria, thresholds, and methodologies for risk assessment. The goal is to ensure fair pricing for customers while effectively managing risk for the insurer. The rules should cover the following areas:
+
+1. Driving Record
+
+Criteria for Evaluation:
+Traffic Violations:
+Define minor vs. major violations.
+Frequency and recency of violations.
+Penalty points and their impact on risk assessment.
+Accidents:
+At-fault vs. not-at-fault accidents.
+Severity and frequency of accidents.
+Impact on premium calculation.
+Length of Clean Record Required:
+Minimum number of years without incidents.
+Gradual reduction in risk premium over time with a clean record.
+Serious Offenses:
+Define serious offenses (e.g., DUI, reckless driving).
+Mandatory waiting periods post-offense.
+Impact on eligibility and premium surcharges.
+
+2. Driver Demographics
+
+Rules for:
+Age Ranges and Risk Levels:
+Define age brackets and associated risk factors.
+Statistical risk data by age group.
+Years of Driving Experience:
+Correlation between experience and risk.
+Experience thresholds for different risk categories.
+Occupation and Education:
+Occupation-related risk factors (e.g., professional drivers vs. office workers).
+Education level correlations with risk (if applicable).
+
+3. Vehicle Information
+
+Assessment Factors:
+Make, Model, and Year:
+Risk ratings for different makes and models.
+Age of vehicle and its impact on risk.
+Safety Features:
+List of safety features (e.g., ABS, airbags) and their impact on risk.
+Discounts for advanced safety technology.
+Anti-Theft Devices:
+Types of anti-theft devices and their effectiveness.
+Premium discounts for installed devices.
+Vehicle Value and Repair Costs:
+Current market value assessment.
+Typical repair costs for the vehicle model.
+
+4. Usage and Location
+
+Rules for:
+Primary Vehicle Use:
+Define usage categories (commuting, pleasure, business).
+Risk factors associated with each category.
+Annual Mileage Thresholds:
+Mileage bands and associated risk levels.
+Impact of high mileage on wear and tear.
+Geographic Location:
+Risk assessment by region (urban vs. rural).
+Local crime rates, weather patterns, and road conditions.
+
+5. Financial Factors
+
+Guidelines for:
+Credit-Based Insurance Score:
+How credit scores are used in risk assessment.
+Impact of credit score ranges on premiums.
+Income Considerations:
+If applicable, how income levels affect risk assessment.
+
+6. Insurance History
+
+Rules Regarding:
+Previous Coverage Lapses:
+Impact of gaps in coverage on eligibility and premiums.
+Length of Continuous Coverage:
+Benefits of long-term continuous coverage.
+Premium discounts for loyalty.
+Prior Claims:
+Frequency and severity of previous claims.
+Impact on current risk assessment and premium calculation.
+
+7. Policy Details
+
+Considerations for:
+Desired Coverage Types and Limits:
+Options for liability, collision, comprehensive, etc.
+Recommended limits based on risk profile.
+Deductible Options:
+Range of deductible choices and their impact on premiums.
+Risk-sharing balance between insurer and insured.
+Multi-Policy Discounts:
+Discounts for bundling multiple policies (e.g., home and auto).
+
+8. Additional Risk Factors
+
+Incorporate Rules for:
+Telematics Data:
+Usage of driving behavior data (speed, braking, etc.).
+Impact of telematics data on risk assessment and premiums.
+Additional Drivers:
+Assessment of risk for each additional driver on the policy.
+Premium adjustments based on additional drivers' risk profiles.
+Special Circumstances:
+Handling of special cases (e.g., DUI convictions, license suspensions).
+Rehabilitation and risk mitigation measures.
+
+9. Compliance and Fairness
+
+Ensure Rules Address:
+Compliance with Local Regulations:
+Adherence to state and federal insurance regulations.
+Regular updates to reflect changes in laws.
+Non-Discriminatory Practices:
+Ensure fair treatment of all applicants.
+Avoidance of biases based on race, gender, or other protected characteristics.
+Regular Review and Update Processes:
+Scheduled reviews of underwriting rules.
+Adaptation to new data, trends, and regulatory changes.
+
+Methodologies
+
+For each area, provide:
+
+Specific Thresholds:
+Clearly defined limits for each criterion.
+Scoring Methods:
+Quantitative scoring models to assess overall risk.
+Decision Trees:
+Step-by-step decision processes for underwriters to follow.
+
+Balancing Fair Pricing and Risk Management
+
+Fair Pricing:
+Ensure premiums reflect actual risk while being competitive.
+Effective Risk Management:
+Implement measures to minimize losses and manage claims efficiently.
+
+
+</rules>
+
+Information about the driver applying for insurance is available in the 
+
+<driver>
+</driver>
+
+Please carefully review the above underwriting rules and driver information. Based solely on the
+provided underwriting rules, determine if this driver can be offered an auto insurance policy or
+not.
+
+Provide your underwriting decision inside <decision> tags.
+
+Then, inside <rationale> tags, provide a detailed rationale and explanation for how you arrived at
+your decision. Reference the specific underwriting rules and driver details that guided your
+decision making process. Explain your reasoning thoroughly.
+
+Remember, your decision and rationale must be based ONLY on the underwriting rules and driver
+information provided. Do not make assumptions or consider any factors outside of what has been
+explicitly stated.
+
+Provide your decision and rationale now.

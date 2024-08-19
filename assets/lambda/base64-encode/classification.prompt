@@ -1,0 +1,8 @@
+Please examine this image carefully to determine if it depicts a driving license or not. If the
+image shows a driving license, output only:
+YES
+If the image does not show a driving license, output only:
+NO
+
+Do not provide any explanation, justification or additional commentary. Your entire output should be
+either the word YES or the word NO in all capital letters.
