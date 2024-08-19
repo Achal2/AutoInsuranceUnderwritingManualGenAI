@@ -1,0 +1,524 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "GenAIUnderwritingValidationStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "GenAIUnderwritingValidationStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "GenAIUnderwritingValidationStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://339263341917/us-east-1",
+      "properties": {
+        "templateFile": "GenAIUnderwritingValidationStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::339263341917:role/cdk-hnb659fds-deploy-role-339263341917-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::339263341917:role/cdk-hnb659fds-cfn-exec-role-339263341917-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-339263341917-us-east-1/ba461201446e7a591b68fbeb7e2d937db49ddbc66038acfd676136454f2b3479.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "GenAIUnderwritingValidationStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::339263341917:role/cdk-hnb659fds-lookup-role-339263341917-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "GenAIUnderwritingValidationStack.assets"
+      ],
+      "metadata": {
+        "/GenAIUnderwritingValidationStack/UnderwritingManualS3Bucket-964/S3Bucket-underwriting-manual-bucket-964/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UnderwritingManualS3Bucket964S3Bucketunderwritingmanualbucket9645004F1E0"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/UnderwritingManualS3Bucket-964/S3Bucket-underwriting-manual-bucket-964/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UnderwritingManualS3Bucket964S3Bucketunderwritingmanualbucket964PolicyCDB0BD68"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/UnderwritingManualS3Bucket-964/S3Bucket-underwriting-manual-bucket-964/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UnderwritingManualS3Bucket964S3Bucketunderwritingmanualbucket964AutoDeleteObjectsCustomResourceB35D43C4"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/UploadUnderwritingManual/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadUnderwritingManualAwsCliLayerFC87A608"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/UploadUnderwritingManual/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadUnderwritingManualCustomResource9887FBC7"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/DocumentS3Bucket-964/S3Bucket-underwriting-document-bucket-964/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DocumentS3Bucket964S3Bucketunderwritingdocumentbucket96419F2A951"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/DocumentS3Bucket-964/S3Bucket-underwriting-document-bucket-964/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DocumentS3Bucket964S3Bucketunderwritingdocumentbucket964Policy437ADC05"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/DocumentS3Bucket-964/S3Bucket-underwriting-document-bucket-964/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DocumentS3Bucket964S3Bucketunderwritingdocumentbucket964AutoDeleteObjectsCustomResource542330AB"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/DocumentS3Bucket-964/S3Bucket-underwriting-document-bucket-964/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DocumentS3Bucket964S3Bucketunderwritingdocumentbucket964NotificationsA1F653FD"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/StepFunctionInputOutputBucket-964/S3Bucket-step-function-input-bucket-964/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StepFunctionInputOutputBucket964S3Bucketstepfunctioninputbucket9648E6550B4"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/StepFunctionInputOutputBucket-964/S3Bucket-step-function-input-bucket-964/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StepFunctionInputOutputBucket964S3Bucketstepfunctioninputbucket964PolicyA3983ACE"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/StepFunctionInputOutputBucket-964/S3Bucket-step-function-input-bucket-964/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StepFunctionInputOutputBucket964S3Bucketstepfunctioninputbucket964AutoDeleteObjectsCustomResource60F68D89"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/VectorCollection/EncryptionPolicy": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseVectorCollectionEncryptionPolicyC8A80F57"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/VectorCollection/NetworkPolicy": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseVectorCollectionNetworkPolicyC7FEE8CD"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/VectorCollection/VectorCollection": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseVectorCollection7204FC26"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/VectorCollection/AOSSApiAccessAll/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseVectorCollectionAOSSApiAccessAllF67C95FE"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/VectorCollection/IsDataAccessPolicyNotEmpty": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseVectorCollectionIsDataAccessPolicyNotEmptyD762485C"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/VectorCollection/DataAccessPolicy": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseVectorCollectionDataAccessPolicy345B3145"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/VectorIndex/ManageIndexPolicy": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseVectorIndexManageIndexPolicy5BC4FA23"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/VectorIndex/VectorIndex/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseVectorIndex856C0712"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/KnowledgeBase/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseRoleDB110E91"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/KnowledgeBase/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseRoleDefaultPolicyF1120426"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/KnowledgeBase/KB/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseKBD784F467"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/KnowledgeBase/KBCRPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseKBCRPolicyF880EDB0"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/DataSource/DataSource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseDataSource439A1EBD"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBase/DataSource/DataSourceCRPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseDataSourceDataSourceCRPolicyA0D852AA"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/OpenSearchIndexCRProvider/CRRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OpenSearchIndexCRProviderCRRole466FC04E"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/OpenSearchIndexCRProvider/CustomResourcesFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OpenSearchIndexCRProviderCustomResourcesFunction4F9ADEA2"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/OpenSearchIndexCRProvider/CustomResourcesFunction/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OpenSearchIndexCRProviderCustomResourcesFunctionLogRetentionC32546EF"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/OpenSearchIndexCRProvider/ProviderRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OpenSearchIndexCRProviderProviderRole87B4E831"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/OpenSearchIndexCRProvider/ProviderRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OpenSearchIndexCRProviderProviderRoleDefaultPolicy9810CB1F"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/OpenSearchIndexCRProvider/Provider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OpenSearchIndexCRProviderframeworkonEvent6CAE4696"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/OpenSearchIndexCRProvider/Provider/framework-onEvent/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OpenSearchIndexCRProviderframeworkonEventLogRetention64E7FA2B"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/BedrockCRProvider/CRRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BedrockCRProviderCRRole90406B17"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/BedrockCRProvider/CustomResourcesFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BedrockCRProviderCustomResourcesFunction9A70E3A5"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/BedrockCRProvider/CustomResourcesFunction/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BedrockCRProviderCustomResourcesFunctionLogRetention32CED555"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/BedrockCRProvider/ProviderRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BedrockCRProviderProviderRoleE6EBD17C"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/BedrockCRProvider/ProviderRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BedrockCRProviderProviderRoleDefaultPolicy517A1A7C"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/BedrockCRProvider/Provider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BedrockCRProviderframeworkonEvent412F4EF1"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/BedrockCRProvider/Provider/framework-onEvent/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BedrockCRProviderframeworkonEventLogRetention862855F3"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/Base64EncodeLambdaRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Base64EncodeLambdaRole3CE23390"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/Base64EncodeLambda/Lambda-Base64EncodeLambda-964/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Base64EncodeLambdaLambdaBase64EncodeLambda96412F93FC1"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/Base64EncodeLambda/Lambda-Base64EncodeLambda-964/Invoke--tnlpEgfIKpZyEIAINy+VhXFS+IfV5EJ7IaMp0cNGOc=": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Base64EncodeLambdaLambdaBase64EncodeLambda964InvoketnlpEgfIKpZyEIAINyVhXFSIfV5EJ7IaMp0cNGOc344D9ED3"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/DmvAPICallLambdaRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DmvAPICallLambdaRole13FFE649"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/DmvAPICallLambda/Lambda-DmvAPICallLambda-964/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DmvAPICallLambdaLambdaDmvAPICallLambda96406DBF1C2"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/DmvAPICallLambda/Lambda-DmvAPICallLambda-964/Invoke--tnlpEgfIKpZyEIAINy+VhXFS+IfV5EJ7IaMp0cNGOc=": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DmvAPICallLambdaLambdaDmvAPICallLambda964InvoketnlpEgfIKpZyEIAINyVhXFSIfV5EJ7IaMp0cNGOc424A170B"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/CombineRetrievedInformationLambdaRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CombineRetrievedInformationLambdaRoleB3DFD077"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/CombineRetrievedInformationLambda/Lambda-CombineRetrievedInformationLambda-964/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CombineRetrievedInformationLambdaLambdaCombineRetrievedInformationLambda964649542E0"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/CombineRetrievedInformationLambda/Lambda-CombineRetrievedInformationLambda-964/Invoke--tnlpEgfIKpZyEIAINy+VhXFS+IfV5EJ7IaMp0cNGOc=": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CombineRetrievedInformationLambdaLambdaCombineRetrievedInformationLambda964InvoketnlpEgfIKpZyEIAINyVhXFSIfV5EJ7IaMp0cNGOc1D731D27"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/GenerateFinalPromptLambdaRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateFinalPromptLambdaRoleDC2A62EA"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/GenerateFinalPromptLambda/Lambda-GenerateFinalPromptLambda-964/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateFinalPromptLambdaLambdaGenerateFinalPromptLambda964B1550916"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/GenerateFinalPromptLambda/Lambda-GenerateFinalPromptLambda-964/Invoke--tnlpEgfIKpZyEIAINy+VhXFS+IfV5EJ7IaMp0cNGOc=": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateFinalPromptLambdaLambdaGenerateFinalPromptLambda964InvoketnlpEgfIKpZyEIAINyVhXFSIfV5EJ7IaMp0cNGOc8DD56970"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/StepFunctions/StateMachineExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StepFunctionsStateMachineExecutionRole83102128"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/StepFunctions/StateMachine": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StepFunctionsStateMachineAF92D462"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/EventBridge/StateMachineTarget/EventsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EventBridgeStateMachineTargetEventsRole0B8B539B"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/EventBridge/StateMachineTarget/EventsRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EventBridgeStateMachineTargetEventsRoleDefaultPolicy8BE1DE6C"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/EventBridge/ExecuteStepFunctionAfterFileUploadRule": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "Either the Event Rule or target has an unresolved environment. \n           If they are being used in a cross-environment setup you need to specify the environment for both. [ack: @aws-cdk/aws-events:ruleUnresolvedEnvironment]",
+            "trace": [
+              "Annotations.addMessage (/Users/achal/aws-insurance-underwriting-gen-ai/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1608)",
+              "Annotations.addWarningV2 (/Users/achal/aws-insurance-underwriting-gen-ai/node_modules/aws-cdk-lib/core/lib/annotations.js:1:825)",
+              "Rule.sameEnvDimension (/Users/achal/aws-insurance-underwriting-gen-ai/node_modules/aws-cdk-lib/aws-events/lib/rule.js:1:8943)",
+              "Rule.addTarget (/Users/achal/aws-insurance-underwriting-gen-ai/node_modules/aws-cdk-lib/aws-events/lib/rule.js:1:3313)",
+              "new Rule (/Users/achal/aws-insurance-underwriting-gen-ai/node_modules/aws-cdk-lib/aws-events/lib/rule.js:1:2412)",
+              "new EventBridgeConstruct (/Users/achal/aws-insurance-underwriting-gen-ai/src/constructs/event-bridge-construct.ts:18:5)",
+              "new AppStack (/Users/achal/aws-insurance-underwriting-gen-ai/src/app-stack.ts:225:25)",
+              "Object.<anonymous> (/Users/achal/aws-insurance-underwriting-gen-ai/src/app.ts:11:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/achal/aws-insurance-underwriting-gen-ai/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/achal/aws-insurance-underwriting-gen-ai/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/achal/aws-insurance-underwriting-gen-ai/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/achal/aws-insurance-underwriting-gen-ai/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/achal/aws-insurance-underwriting-gen-ai/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/achal/aws-insurance-underwriting-gen-ai/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/EventBridge/ExecuteStepFunctionAfterFileUploadRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EventBridgeExecuteStepFunctionAfterFileUploadRuleC429BC63"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/KnowledgeBaseId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KnowledgeBaseId"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/DataSourceId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DataSourceId"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/UnderwritingBucketURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UnderwritingBucketURL"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/GenAIUnderwritingValidationStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "GenAIUnderwritingValidationStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
