@@ -5,6 +5,7 @@ The user begins by uploading a picture of their driver's license. The individual
 
 
 StepFunction/Architecture Diagram
+
 <img width="406" alt="image" src="https://github.com/user-attachments/assets/455e6a29-af96-41b2-8abf-c266723c60ac">
 
 
