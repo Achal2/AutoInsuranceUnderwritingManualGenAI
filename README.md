@@ -13,7 +13,6 @@ Purpose: To streamline the insurance underwriting process with generative AI, au
 Responsible AI: Ensuring fairness, transparency, and security to deliver unbiased, and secure insurance underwriting decisions that comply with ethical standards and protect sensitive data.
 
 Key Features:
-
 Data Privacy: Metadata filtering ensures secure access to sensitive insurance data.
 
 Generative AI: Amazon Bedrock automates underwriting by extracting insights from large data sets.
