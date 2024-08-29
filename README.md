@@ -1,5 +1,5 @@
 # AutoInsuranceUnderwritingManualGenAI
-**The full example of the Step Function worked through is in the AutoUnderwritingProcess-Example folder.
+# The full example of the Step Function worked through is in the AutoUnderwritingProcess-Example folder.
 
 The user begins by uploading a picture of their driver's license. The individual's first name, last name, and driver's license number are extracted to retrieve their driving history. Once the driving history is obtained, Amazon Bedrock, along with the LLM, uses the UnderwritingAutoInsuranceManual document to decide whether the user should be granted auto insurance. Currently, the Lambda function (dmv_api_call.py) retrieves information from an Excel sheet it is linked to. However, once connected to the DMV API, this model will work seamlessly.
 
