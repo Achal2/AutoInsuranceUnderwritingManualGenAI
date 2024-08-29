@@ -7,6 +7,7 @@ Architecture Diagram:
 
 <img width="406" alt="image" src="https://github.com/user-attachments/assets/455e6a29-af96-41b2-8abf-c266723c60ac">
 
+###The full example of the step function worked through is in the 
 
 Purpose: To streamline the insurance underwriting process with generative AI, automating data extraction, delivering real-time insights for underwriters.
 
