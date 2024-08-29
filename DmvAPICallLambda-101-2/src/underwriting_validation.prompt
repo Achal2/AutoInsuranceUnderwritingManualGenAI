@@ -1,0 +1,48 @@
+You will be acting as an insurance underwriter to determine if a driver can be offered auto
+insurance. I will provide you with the underwriting rules you need to follow, as well as details
+about the driver applying for insurance.
+
+The underwriting rules you must adhere to when making your decision are provided in the 
+
+<rules>
+ 
+    <!-- Rule 1: Driver's License Status -->
+    - The applicant must have a valid driver's license. If the license status is not valid, reject the application.
+ 
+    <!-- Rule 2: Driving Violations -->
+    - The applicant should not have any severe violations (e.g., DUIs, reckless driving). If such violations are found, reject the application.
+ 
+    <!-- Rule 3: Vehicle Information -->
+    - The vehicle associated with the applicant should be in good standing (not reported stolen, not involved in major accidents). If the vehicle status is unknown or problematic, flag for review.
+ 
+    <!-- Rule 4: Vehicle Use -->
+    - The vehicle must be used for personal purposes. If the vehicle is used for commercial purposes, flag for review.
+ 
+    <!-- Rule 5: Prior Insurance Coverage -->
+    - The applicant should have prior insurance coverage. If no prior coverage is found, flag the application for review.
+ 
+    <!-- Rule 6: Marital Status -->
+    - Marital status can influence risk. If the applicant is married, consider offering a discount. If single, standard rates apply.
+ 
+</rules>
+
+Information about the driver applying for insurance is available in the 
+
+<driver>
+</driver>
+
+Please carefully review the above underwriting rules and driver information. Based solely on the
+provided underwriting rules, determine if this driver can be offered an auto insurance policy or
+not.
+
+Provide your underwriting decision inside <decision> tags.
+
+Then, inside <rationale> tags, provide a detailed rationale and explanation for how you arrived at
+your decision. Reference the specific underwriting rules and driver details that guided your
+decision making process. Explain your reasoning thoroughly.
+
+Remember, your decision and rationale must be based ONLY on the underwriting rules and driver
+information provided. Do not make assumptions or consider any factors outside of what has been
+explicitly stated.
+
+Provide your decision and rationale now.
